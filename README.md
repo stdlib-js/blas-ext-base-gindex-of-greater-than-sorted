@@ -82,6 +82,11 @@ var x = [ 1.0, 2.0, 2.0, 3.0 ];
 
 var idx = gindexOfGreaterThanSorted( x.length, 2.0, x, 1 );
 // returns 3
+
+x = [ 3.0, 2.0, 2.0, 1.0 ];
+
+idx = gindexOfGreaterThanSorted( x.length, 2.0, x, 1 );
+// returns 0
 ```
 
 The function has the following parameters:
@@ -159,7 +164,7 @@ var idx = gindexOfGreaterThanSorted.ndarray( 3, 1.0, x, 1, x.length-3 );
 
 ## Notes
 
--   The input strided array **must** be sorted in ascending order.
+-   The input strided array must be sorted in either **strictly** ascending or descending order.
 -   If `N <= 0`, both functions return `-1`.
 -   When comparing elements, both functions use the less-than operator `<`. As a consequence, comparisons involving `NaN` always evaluate to `false`, and `-0` and `+0` are considered the same.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array-base/accessor`][@stdlib/array/base/accessor]).
@@ -230,6 +235,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
@@ -275,6 +285,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/blas-ext-base-gindex-of-greater-than-sorted/tree/esm
 [esm-readme]: https://github.com/stdlib-js/blas-ext-base-gindex-of-greater-than-sorted/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/blas-ext-base-gindex-of-greater-than-sorted/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-ext-base-gindex-of-greater-than-sorted/main/LICENSE
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

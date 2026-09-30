@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`f468ab7`](https://github.com/stdlib-js/stdlib/commit/f468ab744697136e0224ffd4b274823a99df80e2) - **refactor:** add support for descending order [(#15681)](https://github.com/stdlib-js/stdlib/pull/15681) _(by Sachin Pangal, Athan Reines)_
 -   [`41f7274`](https://github.com/stdlib-js/stdlib/commit/41f72749198c30bdc955e9426adb7cfa84dab953) - **feat:** add `blas/ext/base/gindex-of-greater-than-sorted` [(#15564)](https://github.com/stdlib-js/stdlib/pull/15564) _(by Sachin Pangal, Athan Reines)_
 
 </details>
